@@ -3,8 +3,7 @@
   <remote fetch="https://github.com/xiaomi-peridot" name="xiaomi-peridot"/>
 
 
-  <remove-project name="LineageOS/android_hardware_qcom-caf_common" />
-  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="xiaomi-peridot" >
+
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
@@ -44,16 +43,6 @@
   <project path="hardware/qcom-caf/sm8650/display" name="hardware_qcom_display" groups="qcom" revision="lineage-21.0-caf-sm8650" remote="xiaomi-peridot" />
   <project path="hardware/qcom-caf/sm8650/media" name="hardware_qcom_media" groups="qcom,lanai-vendor" revision="lineage-21.0-caf-sm8650" remote="xiaomi-peridot" />
   <project path="device/qcom/sepolicy_vndr/sm8650" name="device_qcom_sepolicy_vndr" groups="qcom,lanai-vendor" revision="lineage-21.0-caf-sm8650" remote="xiaomi-peridot" />
-
-  <remove-project name="LineageOS/android_vendor_qcom_opensource_power"/>
-  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" groups="qcom,lanai-vendor" revision="lineage-21.0" remote="xiaomi-peridot"/>
-
-  <remove-project name="LineageOS/android_vendor_qcom_opensource_vibrator"/>
-  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" groups="qcom,lanai-vendor" revision="lineage-21.0" remote="xiaomi-peridot"/>
-
-  <remove-project name="LineageOS/android_vendor_qcom_opensource_usb"/>
-  <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" groups="qcom,lanai-vendor" revision="lineage-21.0" remote="xiaomi-peridot"/>
-
 
 <project name="PeridotDeveloper/device_xiaomi_peridot" path="device/xiaomi/peridot" remote="github" revision="udc" />
 <project name="PeridotDeveloper/device_xiaomi_peridot-kernel" path="device/xiaomi/peridot-kernel" remote="github" revision="udc" />
